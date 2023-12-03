@@ -1,0 +1,7 @@
+[
+    { "text": "Great coding skills! 100% recommend.", "rating": 5 },
+    { "text": "Not that bad, but still needs work.", "rating": 3 },
+    { "text": "Not satisfied at all.", "rating": 1 },
+    { "text": "Not satisfied, needs more practice.", "rating": 2},
+    { "text": "Overall good work, needs to work on time.", "rating": 3}
+]
