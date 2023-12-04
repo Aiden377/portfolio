@@ -24,7 +24,7 @@
 
         .review
         {
-            border: 1px solid #ddd;
+            border: 1px solid #000000;
             border-radius: 5px;
             padding: 10px;
             width: 300px;
@@ -76,6 +76,10 @@
         {
             font-size: 20px;
         }
+        .searchbox
+        {
+            border: 1px solid #000000;
+        }
         
     </style>
     
@@ -91,16 +95,16 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Pocetna</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">O meni</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Moji Projekti</a>
+                        <a class="nav-link" href="projects.html">My Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="recenzije.html">Kontaktiraj Me</a>
+                        <a class="nav-link" href="recenzije.html">Contact Me</a>
                     </li>
                 </ul>
             </div>
@@ -110,8 +114,8 @@
 
     <div class="container">
         <div class="col">
-            <div class=" text-center">
-                <h1>Kontakti</h1>
+            <div class="text-center">
+                <h1 class="pt-3">Contacts</h1>
                 <div class="kontakti">
                     <div class="telefon col-md-6">
                         <i class="fa-solid fa-phone"></i>
@@ -135,15 +139,15 @@
         <a href="https://www.instagram.com/radenkovicc17/" target="_blank" class="ikonica"><i class="fab fa-instagram"></i></a>
     </div>
     <hr></hr>
-    
+    <h1 class="pt-3 text-center">Reviews</h1>
     <div class="container">
         <div class="col search-container">
             <div class="col-md-6">
-                <label for="search">Pretrazi recenzije:</label>
-                <input type="text" id="search" class="form-control" oninput="filterReviews()">       
+                <label for="search">Search Reviews:</label>
+                <input type="text" id="search" class="form-control searchbox" oninput="filterReviews()">       
             </div>
             <div class="col">
-                <button class="btn btn-primary " onclick="resetSearch()">Reset</button>
+                <button class="btn btn-primary" onclick="resetSearch()">Reset</button>
             </div> 
         </div>
 
@@ -173,6 +177,8 @@
             { "text": "Not satisfied at all.", "rating": 1 },
             { "text": "Not satisfied, needs more practice.", "rating": 2},
             { "text": "Overall good work, needs to work on time.", "rating": 3},
+            { "text": "Lacks originality, but overall very efficient.", "rating": 4},
+            { "text": "Very well designed games, 100% would recommend!.", "rating": 5},
         ];
 
         function renderReviews()
