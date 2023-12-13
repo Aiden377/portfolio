@@ -156,20 +156,28 @@
 
 
     <script>
-        function fetchJSONFile(filename, callback)
+        /*import {reviewsData} from './reviews.js';
+        function fetchJSFile(filename, callback)
         {
-            fetch(filename)
-                .then(response => response.json())
-                .then(data => callback(data))
-                .catch(error => console.error('Error fetching JSON:', error));
+            const script = document.createElement('script');
+            script.src = filename;
+            script.type = 'text/javascript';
+            script.onload = () => 
+            {
+                callback(window.reviewsData);
+            };
+            script.onerror = error =>
+            {
+                console.error(error);
+            };
+            document.head.appendChild(script);
         }
-        
 
-        fetchJSONFile("reviews.json", function (data)
+        fetchJSFile("reviews.js", function (data)
         {
             console.log(data);
             renderReviews(data);
-        })
+        });*/
         const reviewsData =
         [
             { "text": "Great coding skills! 100% recommend.", "rating": 5 },
